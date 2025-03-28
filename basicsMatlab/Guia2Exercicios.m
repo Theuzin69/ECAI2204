@@ -22,10 +22,60 @@ surf(X,Y,Z2)
 %%
 
 %%3.7
+figure(3)
+ezplot3('cos(t)','sin(t)','10*t',[0,4*pi])
+title('Curva no Espaço');
+xlabel('cos(t)');
+ylabel('sen(t)');
+zlabel('10t');
 %%
 
 %%4.1
+z=complex(2,3);
+
+#(a)
+abs(z)
+
+#(b)
+angle(z)
+
+#(c)
+fprintf('z = ∣%d∣e%di\n',abs(z),angle(z));
+
+#(d)
+conj(z)
+
+#(e)
+(z*conj(z))^(1/2)
 %%
 
 %%5.1
+A=[2 0 1+i;0 1 0;1+i 0 2+2i];
+B=[1 2 i];
+
+#(a)
+det(A)
+
+#(b)
+inv(A)
+
+#(c)
+A^2
+
+#(d)
+A.*A
+
+#(e)
+abs(A)
+
+#(f)
+angle(A)
+
+#(g)
+real(A)
+imag(A)
+
+#(h)
+x = B*inv(A)
+
 %%
