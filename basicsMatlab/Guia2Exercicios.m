@@ -1,3 +1,6 @@
+## Autor: Matheus Lage Muzzi Cabral
+## RA: 2023009628
+
 clc
 %%3.2
 figure(1)
