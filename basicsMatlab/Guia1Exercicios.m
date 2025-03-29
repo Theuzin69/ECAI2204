@@ -1,3 +1,6 @@
+## Autor: Matheus Lage Muzzi Cabral
+## RA: 2023009628
+
 clc;
 %%4.3.1
 p = -6;
