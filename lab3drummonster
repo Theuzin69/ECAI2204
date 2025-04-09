@@ -26,4 +26,38 @@ plot(t,y1,'b')
 hold on;
 plot(t,ym1,'r')
 
+%%
+
+%k é o ganho, que foi calculado dividindo o valor de saída pelo valor de
+%entrada. Ou seja, 666/60 = 11.1
+
+%tau é a constante de tempo, foi calculada multiplicando 666 por .632
+%(63,2%). Ou seja, 666*.632 = 421 (aproximadamente). Após isso, o ponto 433 é o mais próximo
+%de 421, onde o tempo encontrado foi .35
+
+%%
+
+figure(3)
+k=8.3333;
+tau=.195;
+n=k;
+d=[tau 1];
+G=tf(60*n,d);
+[ym2,t]=step(G,t);
+plot(t,ym2)
+
+plot(t,y2,'b')
+hold on;
+plot(t,ym2,'r')
+
+%%
+
+%k é o ganho, que foi calculado dividindo o valor de saída pelo valor de
+%entrada. Ou seja, 500/60 = 8.3333
+
+%tau é a constante de tempo, foi calculada multiplicando 500 por .632
+%(63,2%). Ou seja, 500*.632 = 316 (aproximadamente). Após isso, o ponto 333 é o mais próximo
+%de 316, onde o tempo encontrado foi .195
+
+%%
 
