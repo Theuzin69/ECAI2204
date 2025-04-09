@@ -1,0 +1,29 @@
+clc;
+
+load t.txt
+load y1.txt
+load y2.txt
+syms x;
+
+f=x^2;
+y=int(f,0,10);
+
+figure(1);
+plot(t,y1,'b')
+hold on;
+plot(t,y2,'r')
+
+figure(2);
+k=11.1;
+tau=.35;
+n=k;
+d=[tau 1];
+G=tf(60*n,d);
+[ym1,t]=step(G,t);
+plot(t,ym1)
+
+plot(t,y1,'b')
+hold on;
+plot(t,ym1,'r')
+
+
